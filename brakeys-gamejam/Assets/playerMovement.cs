@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float MovingSpeed;
+    public float MovingSpeed = 20f;
 
-    public float horizontal;
-    public float vertical;
+    private float horizontal;
+    private float vertical;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
+    public Camera cam;
+
+    Vector2 movemnet;
+    Vector2 mousePos;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,19 +25,24 @@ public class playerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         getInput();
         move();
     }
     void getInput()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+        movemnet.x = Input.GetAxisRaw("Horizontal");
+        movemnet.y = Input.GetAxisRaw("Vertical");
+
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
     void move()
     {
-        rb.velocity = new Vector2(horizontal * MovingSpeed, rb.velocity.y);
-        rb.velocity = new Vector2(rb.velocity.x, vertical * MovingSpeed);
+        rb.MovePosition(rb.position + movemnet * MovingSpeed * Time.fixedDeltaTime);
+
+        Vector2 lookDir = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = angle;
     }
 }
