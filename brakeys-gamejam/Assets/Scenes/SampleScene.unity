@@ -624,6 +624,37 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 411489875}
+--- !u!1 &626073717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626073718}
+  m_Layer: 0
+  m_Name: firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &626073718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626073717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1086561151}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040062997
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +777,7 @@ GameObject:
   - component: {fileID: 1058829784}
   - component: {fileID: 1058829785}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,7 +863,7 @@ GameObject:
   - component: {fileID: 1086561148}
   - component: {fileID: 1086561147}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,8 +919,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovingSpeed: 20
-  horizontal: 0
-  vertical: 0
   rb: {fileID: 1086561148}
   cam: {fileID: 519420031}
 --- !u!4 &1086561151
@@ -906,6 +935,7 @@ Transform:
   m_Children:
   - {fileID: 1058829784}
   - {fileID: 1771072318}
+  - {fileID: 626073718}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1030,8 +1060,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1771072318}
   - component: {fileID: 1771072319}
+  - component: {fileID: 1771072320}
   m_Layer: 0
-  m_Name: Circle (1)
+  m_Name: weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1104,3 +1135,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1771072320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771072317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc1607af351c534490b760bc5a76c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3934520220568624147, guid: 356376d62a25c864e923bdf59fcff84a, type: 3}
+  firepoint: {fileID: 626073718}
+  bulletForce: 30
+  CameraShakePower: 0
