@@ -660,6 +660,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3752939673079098144, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+      propertyPath: m_ScreenX
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752939673079098144, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+      propertyPath: m_ScreenY
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752939673079098144, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+      propertyPath: m_DeadZoneWidth
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752939673079098144, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+      propertyPath: m_SoftZoneWidth
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752939673079098144, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+      propertyPath: m_DeadZoneHeight
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752939673079098144, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+      propertyPath: m_SoftZoneHeight
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
 --- !u!1001 &4341098536302736691
