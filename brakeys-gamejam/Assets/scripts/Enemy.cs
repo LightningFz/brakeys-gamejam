@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Rigidbody2D RB;
-    public Transform Traget;
-    private float Speed = 12f;
-    private float MinDis = 3f; 
+    public float HP; 
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        HP = 100f; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector2.Distance(transform.position, Traget.position) > MinDis)
+        if (HP == 0 ) 
         {
-            transform.position = Vector2.MoveTowards(transform.position, Traget.position, Speed * Time.deltaTime);
+            Destroy(gameObject); 
         }
+    }
+    public void TakeDMG(float BulletDmg) 
+    {
+        HP -= BulletDmg;
+        print(HP); 
     }
 }
