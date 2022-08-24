@@ -733,6 +733,10 @@ PrefabInstance:
       value: 'Formation 2 '
       objectReference: {fileID: 0}
     - target: {fileID: 2491762532153306854, guid: f2860c59571687c45b459b1fb17841fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.127
+      objectReference: {fileID: 0}
+    - target: {fileID: 2491762532153306854, guid: f2860c59571687c45b459b1fb17841fc, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1
       objectReference: {fileID: 0}
