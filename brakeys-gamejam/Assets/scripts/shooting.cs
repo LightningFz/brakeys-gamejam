@@ -9,7 +9,6 @@ public class shooting : MonoBehaviour
     public Transform firepoint;
 
     public float bulletForce = 20f;
-    
     public float CameraShakePower;
 
     // Update is called once per frame
