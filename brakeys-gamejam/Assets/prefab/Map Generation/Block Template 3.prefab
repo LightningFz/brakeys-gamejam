@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4074734936204750556}
   m_Layer: 0
-  m_Name: GameObject3
+  m_Name: Block Template 3
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 166090161632589837}
   - component: {fileID: 4554767933700275631}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1840197189943933041}
   - component: {fileID: 5262366933990977483}
   m_Layer: 0
-  m_Name: GameObject (4)
+  m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
