@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb; 
     private float BulletForce = 20f; 
 
-    private float BulletDMG =20f; 
+    private float BulletDMG = 20f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(transform.forward * BulletForce); 
+        rb.AddForce(transform.up * BulletForce); 
         Destroy(gameObject, 1f); 
     }
     private void OnCollisionEnter2D(Collision2D collision)
