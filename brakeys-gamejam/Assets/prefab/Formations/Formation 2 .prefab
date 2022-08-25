@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovingSpeed: 10
   rb: {fileID: 2491762532048755586}
-  cam: {fileID: 3752939673042470155, guid: fb3ca64d9ac752a429a9bc8324c1f57c, type: 3}
+  cam: {fileID: 0}
 --- !u!50 &2491762532048755586
 Rigidbody2D:
   serializedVersion: 4
@@ -127,7 +127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2491762532153306855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0.15, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -197,6 +197,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5909421691643015740, guid: ffd08b6749a311546b442f7fd1b6a645, type: 3}
   m_PrefabInstance: {fileID: 1637810069901488788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4951936681253503145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5909421691643015741, guid: ffd08b6749a311546b442f7fd1b6a645, type: 3}
+  m_PrefabInstance: {fileID: 1637810069901488788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1314504409
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4951936681253503145}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7388316, y: 0.44496983}
+      - {x: 0.5840769, y: 0.43037874}
+      - {x: 0.5710548, y: 0.7172692}
+      - {x: 0.44338897, y: 0.73265123}
+      - {x: 0.44162375, y: 1.3125339}
+      - {x: 0.30909792, y: 1.3296237}
+      - {x: 0.28061676, y: 0.59951925}
+      - {x: -0.45383987, y: 0.5872774}
+      - {x: -0.7472302, y: 0.3158112}
+      - {x: -0.7516479, y: -0.5645193}
+      - {x: -0.6081678, y: -0.7410749}
+      - {x: 0.7440522, y: -0.73428047}
+      - {x: 0.8837721, y: -0.57091224}
+      - {x: 0.88990855, y: 0.31581134}
 --- !u!1001 &6748375177123434131
 PrefabInstance:
   m_ObjectHideFlags: 0
