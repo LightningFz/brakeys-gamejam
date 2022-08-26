@@ -22,7 +22,7 @@ public class Projecteil : MonoBehaviour
         if(collision.collider.gameObject.CompareTag("Player"))
         {
             print("works");   
-            collision.collider.GetComponent<healthSystem>().Player_TakeDMG(DMG); 
+            //collision.collider.GetComponent<healthSystem>().Player_TakeDMG(DMG); 
             Destroy(gameObject); 
         }
        

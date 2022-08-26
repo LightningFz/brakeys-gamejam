@@ -1,20 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class healthSystem : MonoBehaviour
+public class healthSystem
 {
-    public float Player_HP; 
-    // Start is called before the first frame update
-    void Start()
+    private int healthMax;
+    public int health;
+
+    public healthSystem(int maxhealth)
     {
-        Player_HP = 100f; 
+        this.healthMax = maxhealth;
+        health = healthMax;
+    }
+    public int GetHealth()
+    {
+        return health;
+    }
+    public float HealthPercent()
+    {
+        return health / healthMax;
+    }
+    public void Damage(int damageAmount)
+    {
+        health -= damageAmount;
+        if (health < 0)
+        {
+            health = 0;
+        }
     }
 
-    // Update is called once per frame
-    public void Player_TakeDMG(float ProjectileDMG)
+    public void Heal(int healAmount)
     {
-        Player_HP -= ProjectileDMG; 
-        print(Player_HP); 
+        health += healAmount;
+        if (health > healthMax)
+        {
+            health = healthMax;
+        }
     }
+
 }
