@@ -1,7 +1,7 @@
 
 public class healthSystem
 {
-    private int healthMax;
+    public int healthMax;
     public int health;
 
     public healthSystem(int maxhealth)

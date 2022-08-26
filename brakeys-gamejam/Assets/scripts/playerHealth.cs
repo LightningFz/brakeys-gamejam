@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerHealth : MonoBehaviour
 {
     public healthSystem healthS;
+    public healthbar healthBar;
     public int maxHealth = 500;
 
 
@@ -12,12 +13,14 @@ public class playerHealth : MonoBehaviour
     void Start()
     {
         healthS = new healthSystem(maxHealth);
+        healthBar.setMaxHealth(healthS.healthMax);
     }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log(healthS.health);
+        healthBar.setHealth(healthS.health);
         Die();
     }
     public void Die()
