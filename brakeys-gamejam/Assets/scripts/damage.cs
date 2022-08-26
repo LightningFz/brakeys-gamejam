@@ -11,11 +11,20 @@ public class damage : MonoBehaviour
         {
             _Damage(collision);
         }
+        else if (collision.CompareTag("Helper"))
+        {
+            _DamageHelper(collision);
+        }
     }
 
     void _Damage(Collider2D player)
     {
-        playerHealth playerHealth = player.GetComponentInChildren<playerHealth>();
-        playerHealth.healthS.Damage(DamageAmount);
+        playerHealth health = player.GetComponentInChildren<playerHealth>();
+        health.healthS.Damage(DamageAmount);
+    }
+    void _DamageHelper(Collider2D helper)
+    {
+        helperHealth health = helper.GetComponentInChildren<helperHealth>();
+        health.healthS.Damage(DamageAmount);
     }
 }

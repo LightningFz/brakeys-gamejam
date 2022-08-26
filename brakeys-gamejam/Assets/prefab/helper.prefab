@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5909421691643015740}
   - component: {fileID: 7003399960664248516}
+  - component: {fileID: 4792343822145355168}
+  - component: {fileID: 5333126616017335829}
   m_Layer: 0
   m_Name: helper
   m_TagString: Player
@@ -49,6 +51,64 @@ MonoBehaviour:
   firepoint: {fileID: 2972422066896573555}
   bulletForce: 20
   CameraShakePower: 0
+--- !u!60 &4792343822145355168
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909421691643015741}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.74342704, y: 0.29330686}
+      - {x: 0.73486334, y: 0.43901837}
+      - {x: 0.61177737, y: 0.43686813}
+      - {x: 0.5848796, y: 0.7370356}
+      - {x: 0.44276747, y: 0.7421655}
+      - {x: 0.43783855, y: 1.3480512}
+      - {x: 0.3082664, y: 1.3488278}
+      - {x: 0.2903008, y: 0.6066893}
+      - {x: -0.44199878, y: 0.59702086}
+      - {x: -0.45005363, y: 0.44012055}
+      - {x: -0.58964604, y: 0.4474131}
+      - {x: -0.5847519, y: 0.29495966}
+      - {x: -0.73491925, y: 0.29021227}
+      - {x: -0.74470204, y: -0.58860475}
+      - {x: -0.5907762, y: -0.5814684}
+      - {x: -0.5971497, y: -0.74814755}
+      - {x: 0.76102936, y: -0.73878294}
+      - {x: 0.75958824, y: -0.594325}
+      - {x: 0.8928371, y: -0.5845449}
+      - {x: 0.8761402, y: 0.2949703}
+--- !u!114 &5333126616017335829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909421691643015741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eeefd86c2eb03049bc78f73c63a417a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
 --- !u!1 &5909421691845186959
 GameObject:
   m_ObjectHideFlags: 0
