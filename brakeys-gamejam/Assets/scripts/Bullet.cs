@@ -2,34 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class bullet : MonoBehaviour
 {
-    
-    private Rigidbody2D rb; 
-    private float BulletForce = 20f; 
+    [Header("General")]
+    public float speed = 20f;
+    public int damage = 5;
+    public Rigidbody2D rb;
 
-    private float BulletDMG = 20f; 
-    // Start is called before the first frame update
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>(); 
+        rb.velocity = transform.up * speed;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        rb.AddForce(transform.up * BulletForce); 
-        Destroy(gameObject, 1f); 
+        Kill();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemies"))
         {
-            collision.collider.GetComponent<Enemy>().TakeDMG(BulletDMG); 
-            Destroy(gameObject); 
+            enemyHealth enemy = collision.GetComponent<enemyHealth>();
+            Debug.Log("tookdamage");
+            enemy.healthS.Damage(damage);
+            Destroy(gameObject);
         }
-        
+
+        if (collision.CompareTag("Platform"))
+        {
+            Destroy(gameObject);
+        }
     }
-
+    public void Kill()
+    {
+        Destroy(gameObject, 1f);
+    }
 }
-
