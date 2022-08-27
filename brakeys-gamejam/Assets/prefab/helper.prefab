@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7003399960664248516}
   - component: {fileID: 4792343822145355168}
   - component: {fileID: 5333126616017335829}
+  - component: {fileID: 1281610347346842389}
   m_Layer: 0
   m_Name: helper
   m_TagString: Player
@@ -49,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3934520220568624147, guid: 356376d62a25c864e923bdf59fcff84a, type: 3}
   firepoint: {fileID: 2972422066896573555}
+  cinemachineShake: {fileID: 0}
   bulletForce: 20
   CameraShakePower: 0
 --- !u!60 &4792343822145355168
@@ -108,8 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eeefd86c2eb03049bc78f73c63a417a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 7868851366609805127, guid: a7d20a02ffc419846a6d67994081cae7, type: 3}
+  healthBar: {fileID: 8756618250570128501, guid: f9db5ab7c7bef6748b9acb97304285da, type: 3}
   maxHealth: 50
+--- !u!114 &1281610347346842389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909421691643015741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311bcbac4d4c01245ae2a18c7b306e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5909421691845186959
 GameObject:
   m_ObjectHideFlags: 0

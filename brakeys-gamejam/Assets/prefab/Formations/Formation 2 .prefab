@@ -142,6 +142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2491762532153306854}
     m_Modifications:
+    - target: {fileID: 5333126616017335829, guid: ffd08b6749a311546b442f7fd1b6a645, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5909421691643015740, guid: ffd08b6749a311546b442f7fd1b6a645, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -190,6 +194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: helper
       objectReference: {fileID: 0}
+    - target: {fileID: 5909421691643015741, guid: ffd08b6749a311546b442f7fd1b6a645, type: 3}
+      propertyPath: m_TagString
+      value: Helper
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffd08b6749a311546b442f7fd1b6a645, type: 3}
 --- !u!4 &4951936681253503144 stripped
@@ -204,6 +212,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2491762531657717310}
     m_Modifications:
+    - target: {fileID: 5476631385358900245, guid: 98b0dc763402ebd4f9402b0ef7e90732, type: 3}
+      propertyPath: cinemachineShake
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198285632399500295, guid: 98b0dc763402ebd4f9402b0ef7e90732, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8198285632399500295, guid: 98b0dc763402ebd4f9402b0ef7e90732, type: 3}
       propertyPath: maxHealth
       value: 100

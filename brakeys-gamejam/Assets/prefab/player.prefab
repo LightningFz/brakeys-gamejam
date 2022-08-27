@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5476631385358900245}
   - component: {fileID: 1657838614930965655}
   - component: {fileID: 8198285632399500295}
+  - component: {fileID: 164388696399155338}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -133,8 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3934520220568624147, guid: 356376d62a25c864e923bdf59fcff84a, type: 3}
   firepoint: {fileID: 320281196247718050}
+  cinemachineShake: {fileID: 164388696399155338}
   bulletForce: 20
-  CameraShakePower: 0
+  CameraShakePower: 10
 --- !u!60 &1657838614930965655
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -190,6 +192,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 5735134162849627082, guid: cee4abab99325d74c9a331fe7da40e68, type: 3}
   maxHealth: 500
+--- !u!114 &164388696399155338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165827627190894316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311bcbac4d4c01245ae2a18c7b306e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9165827627927837022
 GameObject:
   m_ObjectHideFlags: 0

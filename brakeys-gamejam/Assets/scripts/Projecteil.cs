@@ -6,7 +6,7 @@ public class Projecteil : MonoBehaviour
 {
     public Vector2 TargetPos;
     private float Speed = 12f; 
-    private float DMG = 20; 
+    //private float DMG = 20; 
     void Start() 
     {
         TargetPos = GameObject.FindGameObjectWithTag("Player").transform.position;
