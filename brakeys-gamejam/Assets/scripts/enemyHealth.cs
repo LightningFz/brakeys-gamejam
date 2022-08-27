@@ -6,17 +6,12 @@ public class enemyHealth : MonoBehaviour
 {
     public healthSystem healthS;
     public healthbar healthBar;
+    public GameObject healthBarGameObject;
     public int maxHealth = 50;
 
     public RectTransform healthBarRect;
 
-    private Quaternion rotation;
-    private Vector3 position;
-    /*void Awake()
-    {
-        //rotation = transform.rotation;
-        //position = transform.parent.position - transform.position;
-    }*/
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +22,6 @@ public class enemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.rotation = rotation;
-        //transform.position = transform.parent.position - position;
         healthBar.setHealth(healthS.health);
         Die();
     }
@@ -36,6 +29,7 @@ public class enemyHealth : MonoBehaviour
     {
         if (healthS.health <= 0)
         {
+            Destroy(healthBarGameObject);
             Destroy(gameObject);
         }
     }

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-    public Transform cam;
-    // Update is called once per frame
+    public Transform enemy;
+    void Awake()
+    {
+        Vector3 enemyPos = new Vector3(enemy.transform.position.x, enemy.position.y + 1, 0f);
+        gameObject.transform.position = enemyPos;
+    }
     void LateUpdate()
     {
-        transform.LookAt(transform.position + cam.forward);
+        Vector3 enemyPos = new Vector3(enemy.transform.position.x, enemy.position.y + 1, 0f);
+        gameObject.transform.position = enemyPos;
     }
 }
